@@ -379,7 +379,7 @@ body::before {
   height: 70%;
 }
 .avatar-placeholder::after {
-  content: 'Your Photo';
+  content: 'Photo';
   position: absolute;
   bottom: 1rem;
   font-size: 0.75rem;
