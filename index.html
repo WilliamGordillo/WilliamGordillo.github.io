@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jane Doe — Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">JD</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg-text" aria-hidden="true">PORTFOLIO</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Available for work</p>
+      <h1 class="hero-name">William<br /><em>Holt Gordillo</em></h1>
+      <p class="hero-title">Senior Product Designer &amp; UX Strategist</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-placeholder">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="30" r="18" fill="var(--accent)" opacity="0.4"/>
+              <ellipse cx="40" cy="72" rx="28" ry="18" fill="var(--accent)" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-number">8+</span><span class="stat-label">Years experience</span></div>
+            <div class="stat"><span class="stat-number">40+</span><span class="stat-label">Projects shipped</span></div>
+            <div class="stat"><span class="stat-number">12</span><span class="stat-label">Happy clients</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-heading">Crafting digital experiences that <em>actually</em> work.</h2>
+          <p>I'm a product designer with over eight years of experience working at the intersection of user research, interaction design, and visual craft. I believe great design is invisible — it just works, feels right, and quietly solves problems people didn't even know they had.</p>
+          <p>My background spans fintech, healthtech, and SaaS platforms, giving me a broad vocabulary for solving complex UX challenges across industries. I'm equally at home running a discovery sprint, redesigning a design system from scratch, or pixel-perfecting a final handoff.</p>
+          <p>Outside of work, I mentor junior designers, contribute to open-source design projects, and write occasional essays on the ethics of persuasive design.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top: 1.5rem;">Let's work together →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-heading">What I bring <em>to the table</em></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon">✦</div>
+          <h3>UX Research</h3>
+          <p>User interviews, usability testing, journey mapping, heuristic analysis, and synthesis workshops.</p>
+          <ul class="skill-tags">
+            <li>User Interviews</li><li>Usability Testing</li><li>Journey Mapping</li><li>A/B Testing</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="100">
+          <div class="skill-icon">◈</div>
+          <h3>Product Design</h3>
+          <p>End-to-end product design from wireframes to polished, dev-ready UI across web and mobile platforms.</p>
+          <ul class="skill-tags">
+            <li>Figma</li><li>Prototyping</li><li>Wireframing</li><li>Design Systems</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="200">
+          <div class="skill-icon">⬡</div>
+          <h3>Frontend Development</h3>
+          <p>Solid command of HTML, CSS, and JavaScript to collaborate fluently with engineers and prototype in code.</p>
+          <ul class="skill-tags">
+            <li>HTML / CSS</li><li>JavaScript</li><li>React</li><li>Tailwind</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="300">
+          <div class="skill-icon">❋</div>
+          <h3>Strategy &amp; Leadership</h3>
+          <p>Stakeholder alignment, design critique facilitation, and cross-functional team leadership.</p>
+          <ul class="skill-tags">
+            <li>Design Strategy</li><li>Roadmapping</li><li>Workshops</li><li>Mentorship</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / LOGOS -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-label">03 — Experience</div>
+      <h2 class="section-heading">Companies I've <em>worked with</em></h2>
+      <p class="section-sub">I've had the privilege of working with forward-thinking teams across a range of industries.</p>
+      <div class="logos-track-wrapper">
+        <div class="logos-track" id="logosTrack">
+
+          <!-- Each logo-item: replace the SVG/text with real logos as <img> tags -->
+          <div class="logo-item"><span class="logo-wordmark">Acme Corp</span></div>
+          <div class="logo-item"><span class="logo-wordmark">Finova</span></div>
+          <div class="logo-item"><span class="logo-wordmark">Nexlayer</span></div>
+          <div class="logo-item"><span class="logo-wordmark">Orbitly</span></div>
+          <div class="logo-item"><span class="logo-wordmark">Stackbridge</span></div>
+          <div class="logo-item"><span class="logo-wordmark">Luminary</span></div>
+          <div class="logo-item"><span class="logo-wordmark">Crestwave</span></div>
+          <!-- Duplicated for seamless loop -->
+          <div class="logo-item" aria-hidden="true"><span class="logo-wordmark">Acme Corp</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-wordmark">Finova</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-wordmark">Nexlayer</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-wordmark">Orbitly</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-wordmark">Stackbridge</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-wordmark">Luminary</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-wordmark">Crestwave</span></div>
+
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2021 — Present</div>
+          <div class="timeline-body">
+            <h3>Lead Product Designer</h3>
+            <span class="timeline-company">Acme Corp</span>
+            <p>Leading the design function for a 0→1 fintech product, from discovery through to a successful public launch. Grew the design team from 2 to 6 people.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2019 — 2021</div>
+          <div class="timeline-body">
+            <h3>Senior UX Designer</h3>
+            <span class="timeline-company">Finova</span>
+            <p>Owned design for the core lending product. Redesigned the onboarding flow, reducing drop-off by 34% and improving activation rates significantly.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2017 — 2019</div>
+          <div class="timeline-body">
+            <h3>UX Designer</h3>
+            <span class="timeline-company">Nexlayer</span>
+            <p>Worked across a suite of B2B SaaS products, conducting user research and designing end-to-end flows for enterprise customers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container contact-inner">
+      <div class="section-label">04 — Contact</div>
+      <h2 class="section-heading">Let's build something <em>great</em> together.</h2>
+      <p>Whether you have a project in mind, a question, or just want to say hello — my inbox is always open.</p>
+      <a href="mailto:williamholt748@gmail.com" class="contact-email">williamholt748@gmail.com</a>
+      <div class="social-links">
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a>
+        <a href="/resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© 2026 Jane Doe. Designed &amp; built with care.</span>
+    <a href="#" class="back-to-top">Back to top ↑</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
