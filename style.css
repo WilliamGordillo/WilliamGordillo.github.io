@@ -528,6 +528,7 @@ body::before {
   background: linear-gradient(to left, var(--bg-2), transparent);
 }
 
+/* 
 .logos-track {
   display: flex;
   gap: 3rem;
@@ -540,7 +541,13 @@ body::before {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
-
+*/
+.logos-track {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
 .logo-item {
   display: flex;
   align-items: center;
@@ -566,10 +573,14 @@ body::before {
 }
 .logo-item:hover .logo-wordmark { color: var(--text); }
 
-/* Replace logo-wordmark with actual img tags later:
-   .logo-item img { height: 28px; width: auto; filter: brightness(0) invert(0.5); }
-   .logo-item:hover img { filter: brightness(0) invert(0.9); }
-*/
+.logo-item img {
+  height: 28px;
+  width: auto;
+}
+
+.logo-item:hover img {
+  filter: brightness(0) invert(0.9);
+}
 
 /* Timeline */
 .timeline {
