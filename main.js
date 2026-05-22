@@ -140,4 +140,13 @@ document.querySelector('.back-to-top')?.addEventListener('click', (e) => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-console.log('Portfolio loaded ✦');
+document.querySelectorAll('.social-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    gtag('event', 'click', {
+      event_category: 'outbound',
+      event_label: link.textContent.trim()
+    });
+  });
+});
+
+console.log('Portfolio loaded');
